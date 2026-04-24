@@ -20,31 +20,31 @@ public class FirstSpringBootApplication implements CommandLineRunner {
 	// 3. Ghi đè hàm run(). Đây là sân chơi để bạn test code!
 	@Override
 	public void run(String... args) throws Exception {
-		Book b1 = new Book("Chí Phèo", "Nam Cao", 1941, "AVAILABLE");
-		Book b2 = new Book("Lão Hạc", "Nam Cao", 1943, "BORROWED");
-		Book b3 = new Book("Tôi thấy hoa vàng trên cỏ xanh", "Nguyễn Nhật Ánh", 2010, "AVAILABLE");
-		Book b4 = new Book("Clean Code - Lập trình sạch", "Robert C. Martin", 2008, "AVAILABLE");
-		Book b5 = new Book("Giáo trình Lập trình Java", "Học viện PTIT", 2021, "BORROWED");
-        bookService.addBook(b1);
-		bookService.addBook(b2);
-		bookService.addBook(b3);
-		bookService.addBook(b4);
-        bookService.addBook(b5);
-		System.out.println(" TEST TIM SACH THEO TAC GIA");
-		List<Book> listTest1 = bookService.timTheoTacGia("Nam Cao");
-        for(Book x : listTest1) {
-			System.out.println(x);
-		}
-		System.out.println(" TEST TIM SACH AVAILABLE SAU NAM 2006");
-        List<Book> listTest2 = bookService.sachLocTheoNam("AVAILABLE", 2006);
-		for(Book x : listTest2) {
-			System.out.println(x);
-		}
-		System.out.println("TEST TIM SACH THEO KEY");
-		List<Book> listTest3 = bookService.timSachTheoKey("lap trinh");
-		for(Book x : listTest3) {
-			System.out.println(x);
-		}
+//		Book b1 = new Book("Chí Phèo", "Nam Cao", 1941, "AVAILABLE");
+//		Book b2 = new Book("Lão Hạc", "Nam Cao", 1943, "BORROWED");
+//		Book b3 = new Book("Tôi thấy hoa vàng trên cỏ xanh", "Nguyễn Nhật Ánh", 2010, "AVAILABLE");
+//		Book b4 = new Book("Clean Code - Lập trình sạch", "Robert C. Martin", 2008, "AVAILABLE");
+//		Book b5 = new Book("Giáo trình Lập trình Java", "Học viện PTIT", 2021, "BORROWED");
+//        bookService.addBook(b1);
+//		bookService.addBook(b2);
+//		bookService.addBook(b3);
+//		bookService.addBook(b4);
+//        bookService.addBook(b5);
+//		System.out.println(" TEST TIM SACH THEO TAC GIA");
+//		List<Book> listTest1 = bookService.timTheoTacGia("Nam Cao");
+//        for(Book x : listTest1) {
+//			System.out.println(x);
+//		}
+//		System.out.println(" TEST TIM SACH AVAILABLE SAU NAM 2006");
+//        List<Book> listTest2 = bookService.sachLocTheoNam("AVAILABLE", 2006);
+//		for(Book x : listTest2) {
+//			System.out.println(x);
+//		}
+//		System.out.println("TEST TIM SACH THEO KEY");
+//		List<Book> listTest3 = bookService.timSachTheoKey("lap trinh");
+//		for(Book x : listTest3) {
+//			System.out.println(x);
+//		}
 //		System.out.println("====== BẮT ĐẦU TEST MODULE SẢN PHẨM ======");
 //		Product pr1 = new Product("suaMilo", "sua", 25000.55, 35);
 //		Product pr2 = new Product("suaVilaMilk", "sua", 27000.56, 24);
